@@ -1,23 +1,18 @@
 var imageData = [
   {
-    title: 'Dog',
-    image: 'http://tinyurl.com/n4vgcl5',
-    rating: 'Dog Picture - 5'
+    title: 'Fish',
+    url: 'http://tinyurl.com/n4vgcl5',
+    rating: 5
   },
   {
-    title: 'Cat',
-    image: 'http://tinyurl.com/kxd7cuu',
-    rating: 'Cat Picture - 6'
-  },
-  {
-    title: 'Mountains',
-    image: 'http://tinyurl.com/zgs7z2s',
-    rating: 'Mountain Picture - 7'
+    title: 'Octopus',
+    url: 'http://tinyurl.com/kxd7cuu',
+    rating: 4
   },
   {
     title: 'Ocean',
-    image: 'http://tinyurl.com/zgs7z2s',
-    rating: 'Ocean Picture - 8'
+    url: 'http://tinyurl.com/zgs7z2s',
+    rating: 3
   }
 ];
 

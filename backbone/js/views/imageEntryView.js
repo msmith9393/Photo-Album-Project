@@ -1,25 +1,28 @@
 var ImageEntryView = Backbone.View.extend({
-  
+
   tagName: 'tr',
 
-  imageTemplate: _.template('<td class="img-entry"><%=title%></td>'),
+  template: _.template('<td class="img-entry"><%=title%></td>'),
 
   events: {
-    'click': function() {
-      console.log(this);
-      this.model.changeImage();
-    }
+    'click': 'handleClick'
+  },
+
+  handleClick: function() {
+    console.log('HELLO');
+    this.model.displayImage();
   },
 
   initialize: function() {
-    this.render();
-    this.model.on('toggle:description', this.render, this);
-    this.listenTo(this.model, 'change', this.render);
+    // this.model.on('toggle:currentImage', this.render, this);
+    // this.listenTo(this.model, 'change', this.render);
+    // this.render();
   },
 
   render: function() {
-    this.$el.html(this.imageTemplate(this.model.attributes));
-    return this;
+    return this.$el.html(this.template(this.model.attributes));
+    // this.el.innerHTML = (this.imageTemplate(this.model.attributes));
+    // this.delegateEvents();
+    // return this;
   }
-
 });

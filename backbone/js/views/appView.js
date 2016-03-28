@@ -13,12 +13,13 @@ var AppView = Backbone.View.extend({
       model: this.model.get('currentImage')
     });
 
-    this.model.on('change:currentImage', function(model) {
-      this.imageDisplayView.setImage(model.get('currentImage'));
-    }, this);
+    // this.model.on('change:currentImage', function(model) {
+    //   this.imageDisplayView.setImage(model.get('currentImage'));
+    // }, this);
 
     this.render();
   },
+
 
   render() {
     return this.$el.html([
@@ -27,3 +28,6 @@ var AppView = Backbone.View.extend({
     ]);
   }
 });
+
+
+
