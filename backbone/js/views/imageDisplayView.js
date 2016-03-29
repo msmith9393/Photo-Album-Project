@@ -3,21 +3,21 @@ var ImageDisplayView = Backbone.View.extend({
   className: 'currentImage',
 
   initialize: function() {
-    // console.log('this.model in backbone view', this.model.attributes);
+    console.log('CURRENT IMAGE in ImageDisplayView view', this.model);
     this.render();
-    this.listenTo(this.model, 'change', this.render);
   },
 
-  // setImage: function(image) {
-  //   this.model = image;
-  //   this.render();
-  // },
+  setImage: function(image) {
+    console.log('IMAGE', image);
+    this.model = image;
+    this.render();
+  },
 
   render: function() {
-    var image = $('<img class="currentImage" />').attr('src', this.model ? this.model.get('image') : '');
+    this.$el.children().detach();
+    var image = $('<img class="currentImage" />').attr('src', this.model.attributes.url);
     return this.$el.append(image)
-      .append($('<p class="title">' + this.model.get('title') + '</p>'))
-      .append($('<p class="rating">Rating: ' + this.model.get('rating') + '</p>'));
+      .append($('<p><span class="title">' + this.model.get('title') + ':  </span><span class="rating">' + this.model.get('rating') + ' out of 5</span></p>'))
   }
 
 });

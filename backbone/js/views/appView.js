@@ -13,15 +13,15 @@ var AppView = Backbone.View.extend({
       model: this.model.get('currentImage')
     });
 
-    // this.model.on('change:currentImage', function(model) {
-    //   this.imageDisplayView.setImage(model.get('currentImage'));
-    // }, this);
+    this.model.on('change:currentImage', function(model) {
+      this.imageDisplayView.setImage(model.get('currentImage'));
+    }, this);
 
-    this.render();
   },
 
 
   render() {
+    // this.$el.children().detach();
     return this.$el.html([
       this.imageTableView.$el,
       this.imageDisplayView.$el

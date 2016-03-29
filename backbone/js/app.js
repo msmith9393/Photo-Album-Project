@@ -20,7 +20,7 @@ var imageData = [
 var ImageDataCollection = new Backbone.Collection(imageData, { model: Image });
 // model representing entire app, takes collection of images
 var AppModel = new AppModel({ imageCollection: ImageDataCollection })
-// view of entire app
+// view of entire app has access to AppModel
 var AppView = new AppView({ model: AppModel });
 
 $('#container').append(AppView.render());

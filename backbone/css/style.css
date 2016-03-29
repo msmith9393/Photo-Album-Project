@@ -47,13 +47,17 @@ table {
 }
 /*END RESET */
 body {
-  font-family: Arial;
+  font-family: Raleway, Arial;
   font-size: 18px;
+}
+
+.image-title {
+  font-weight: 700;
 }
 
 #container {
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
 }
 
 .app {
@@ -69,9 +73,9 @@ table, th, td {
 }
 
 .currentImage {
-  width: 300px;
-  height: 200px;
-  background: #eee;
+  /*width: 300px;*/
+  /*height: 200px;*/
+  /*background: #eee;*/
   float: right;
 }
 
