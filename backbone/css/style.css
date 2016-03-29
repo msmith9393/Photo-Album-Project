@@ -57,12 +57,18 @@ body {
 
 #container {
   margin: 0 auto;
-  width: 40%;
+  width: 60%;
 }
 
 .app {
   margin: 20px auto;
   min-width: 520px
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 table, th, td {
@@ -73,12 +79,21 @@ table, th, td {
 }
 
 .currentImage {
-  /*width: 300px;*/
-  /*height: 200px;*/
-  /*background: #eee;*/
   float: right;
 }
 
+.img-form {
+  padding: 20px;
+}
+
+.new-image-form {
+  padding: 20px;
+  background: rgba(250, 100, 200, .1);
+}
+
+.title {
+  font-weight: 700;
+}
 
 
 

@@ -9,14 +9,11 @@ var ImageEntryView = Backbone.View.extend({
   },
 
   handleClick: function() {
-    console.log('HELLO');
     this.model.displayImage();
   },
 
   initialize: function() {
     this.model.on('toggle:currentImage', this.render, this);
-    // this.listenTo(this.model, 'change', this.render);
-    // this.render();
   },
 
   render: function() {

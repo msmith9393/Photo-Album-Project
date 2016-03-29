@@ -3,12 +3,10 @@ var ImageDisplayView = Backbone.View.extend({
   className: 'currentImage',
 
   initialize: function() {
-    console.log('CURRENT IMAGE in ImageDisplayView view', this.model);
     this.render();
   },
 
   setImage: function(image) {
-    console.log('IMAGE', image);
     this.model = image;
     this.render();
   },
