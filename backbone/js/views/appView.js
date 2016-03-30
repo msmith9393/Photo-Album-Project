@@ -17,9 +17,10 @@ var AppView = Backbone.View.extend({
       this.imageDisplayView.setImage(model.get('currentImage'));
     }, this);
 
-    // this.model.on('change:currentCollection', function() {
-    //   this.imageFormView.addImage(model);
-    // }, this);
+    this.model.on('change:currentCollection', function() {
+      console.log('CHANGING CURRENT COLLECTION IN APPVIEW');
+      this.imageFormView.addImage(model);
+    }, this);
 
   },
 
