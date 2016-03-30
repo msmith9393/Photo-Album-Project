@@ -1,0 +1,54 @@
+body {
+  font-family: Raleway;
+}
+
+td {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+h3 {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.img-title {
+  font-weight: 700;
+}
+
+.img-form {
+  padding: 30px;
+}
+
+.table {
+  padding: 15px;
+}
+
+#app {
+  width: 70%;
+}
+
+.image-table-panel {
+  display: inline-block;
+  width: 50%;
+  /*background: rgba(0, 0, 0, .1);*/
+}
+
+.image-display-panel {
+  float: right;
+  width: 50%;
+  /*background: rgba(120, 50, 100, .1);*/
+}
+
+.rating {
+  padding: 15px;
+}
+
+.image-display-title {
+  font-weight: 700;
+}
+
+.new-image-form {
+  padding: 20px;
+  /*background: rgba(250, 100, 200, .1);*/
+}
