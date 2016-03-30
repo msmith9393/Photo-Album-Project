@@ -17,7 +17,8 @@ var ImageEntryView = Backbone.View.extend({
   },
 
   render: function() {
-    // this.delegateEvents();
+    this.delegateEvents();
+    this.$el.children().detach();
     return this.$el.html(this.template(this.model.attributes));
   }
 });

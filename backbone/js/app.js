@@ -23,4 +23,4 @@ var AppModel = new AppModel({ imageCollection: ImageDataCollection })
 // view of entire app has access to AppModel
 var AppView = new AppView({ model: AppModel });
 
-$('#container').append(AppView.render());
+$('#container').append(AppView.$el);

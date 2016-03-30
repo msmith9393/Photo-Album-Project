@@ -1,3 +1,7 @@
+
+Complete a version in react and backbone
+run react using live servers
+
 How to use: 
 You may want to assign the student the entire project, or just specific stages. Even if you want to only assign early stages, it may be useful to show them all stages in case they want to extend their project. 
 

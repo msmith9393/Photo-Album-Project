@@ -3,6 +3,7 @@ var AppView = Backbone.View.extend({
   className: 'app',
 
   initialize: function() {
+
     this.imageFormView = new ImageFormView({collection: this.model.get('currentCollection')});
 
     this.imageTableView = new ImageTableView({
@@ -17,11 +18,13 @@ var AppView = Backbone.View.extend({
       this.imageDisplayView.setImage(model.get('currentImage'));
     }, this);
 
-    this.model.on('change:currentCollection', function() {
+    this.model.on('change:currentCollection', function(collection) {
       console.log('CHANGING CURRENT COLLECTION IN APPVIEW');
-      this.imageFormView.addImage(model);
+      this.$el.empty();
+      this.render();
     }, this);
 
+    this.render();
   },
 
 

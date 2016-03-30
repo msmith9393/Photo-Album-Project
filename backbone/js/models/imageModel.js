@@ -4,9 +4,10 @@ var Image = Backbone.Model.extend({
     this.trigger('displayImage', this);
   },
 
-  addImage: function() {
-    console.log('ADD IMAGE INSIDE IMAGE');
-    this.trigger('addImage', this);
+  defaults: {
+    title: '',
+    url: '',
+    rating: ''
   }
 
 });
