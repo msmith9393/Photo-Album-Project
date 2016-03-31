@@ -80,6 +80,7 @@ table, th, td {
 
 .currentImage {
   float: right;
+  width: 250px;
 }
 
 .img-form {

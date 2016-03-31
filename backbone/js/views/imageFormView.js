@@ -35,8 +35,8 @@ var ImageFormView = Backbone.View.extend({
         <option value=4>4</option>\
         <option value=5>5</option>\
         </select>');
-
   }
+  
 });
 
 

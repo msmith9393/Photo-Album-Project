@@ -18,15 +18,7 @@ var AppView = Backbone.View.extend({
       this.imageDisplayView.setImage(model.get('currentImage'));
     }, this);
 
-    this.model.on('change:currentCollection', function(collection) {
-      console.log('CHANGING CURRENT COLLECTION IN APPVIEW');
-      this.$el.empty();
-      this.render();
-    }, this);
-
-    this.render();
   },
-
 
   render() {
     this.$el.children().detach();
