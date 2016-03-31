@@ -18,6 +18,22 @@ var AppView = Backbone.View.extend({
       this.imageDisplayView.setImage(model.get('currentImage'));
     }, this);
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+    this.model.on('change:currentCollection', function() {
+      console.log('CHANGING CURRENT COLLECTION IN APPVIEW');
+      this.imageFormView.addImage(model);
+    }, this);
+
+=======
+    this.model.on('change:currentCollection', function(collection) {
+      console.log('CHANGING CURRENT COLLECTION IN APPVIEW');
+      this.$el.empty();
+      this.render();
+    }, this);
+
+    this.render();
+>>>>>>> 203898d4e10597a32d9d98e4315ead9bc6c0b782
   },
 
   render() {

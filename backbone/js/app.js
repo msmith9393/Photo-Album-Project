@@ -21,5 +21,11 @@ var imageData = [
   var AppModel = new AppModel({ imageCollection: ImageDataCollection })
   var AppView = new AppView({ model: AppModel });
 
+<<<<<<< HEAD
   $('#container').append(AppView.render());
 // });
+||||||| merged common ancestors
+$('#container').append(AppView.render());
+=======
+$('#container').append(AppView.$el);
+>>>>>>> 203898d4e10597a32d9d98e4315ead9bc6c0b782

@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 
 Complete a version in react and backbone
 run react using live server
 
+||||||| merged common ancestors
+=======
+
+Complete a version in react and backbone
+run react using live servers
+
+>>>>>>> 203898d4e10597a32d9d98e4315ead9bc6c0b782
 How to use: 
 You may want to assign the student the entire project, or just specific stages. Even if you want to only assign early stages, it may be useful to show them all stages in case they want to extend their project. 
 

@@ -34,7 +34,6 @@ var ImageFormView = Backbone.View.extend({
         return val;
     }));
 
-
     this.$el.children().detach();
     return this.$el.append('<form id="submit">\
       <label>Image Link: <input type="text" /></label>\
