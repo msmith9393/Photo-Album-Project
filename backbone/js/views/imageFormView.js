@@ -23,20 +23,26 @@ var ImageFormView = Backbone.View.extend({
   },
 
   render: function() {
+
+    var options = ['select', 1, 2, 3, 4, 5];
+    
+    var dropdown = $('<select>').append(options.map(function(value) {
+        var val = '<option value="'+value+'">'+value+'</option>';
+        if (value === 'select') {
+          val = '<option selected value="1">'+value+'</option>'
+        }
+        return val;
+    }));
+
+
     this.$el.children().detach();
     return this.$el.append('<form id="submit">\
       <label>Image Link: <input type="text" /></label>\
       <label class="img-form">Image Title: <input class="img-title" type="text" /></label>\
       <input type="submit" value="Save Photo"></form>')
-      .append('Rating: <select class="drop-down">\
-        <option value=1>1</option>\
-        <option value=2>2</option>\
-        <option value=3>3</option>\
-        <option value=4>4</option>\
-        <option value=5>5</option>\
-        </select>');
+      .append(dropdown);
   }
-  
+
 });
 
 
